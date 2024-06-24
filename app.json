@@ -2,7 +2,7 @@
   "expo": {
     "name": "control-hub",
     "slug": "control-hub",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo-small.png",
     "scheme": "myapp",
@@ -16,10 +16,12 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo-small.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.s_hitsan.controlhub"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4dea8a81-372a-4567-98be-8ff8c0bc28be"
+      }
     }
   }
 }
