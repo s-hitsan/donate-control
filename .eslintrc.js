@@ -1,4 +1,9 @@
-// https://docs.expo.dev/guides/using-eslint/
 module.exports = {
-  extends: 'expo',
+  extends: ['universe', 'universe/native'],
+  rules: {
+    'import/order': 0,
+    'react-native/no-inline-styles': 0,
+    'import/namespace': 0,
+    'no-duplicate-imports': 'error',
+  },
 };
