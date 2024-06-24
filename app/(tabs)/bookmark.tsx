@@ -1,4 +1,5 @@
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 
 const Bookmark = () => {
   return (
@@ -9,3 +10,5 @@ const Bookmark = () => {
 };
 
 export default Bookmark;
+
+const styles = StyleSheet.create({});
