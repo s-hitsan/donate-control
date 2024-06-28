@@ -1,5 +1,8 @@
+import { config } from '@gluestack-ui/config';
+import { GluestackUIProvider } from '@gluestack-ui/themed';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
+import { NativeWindStyleSheet } from 'nativewind';
 import React, { useEffect } from 'react';
 
 SplashScreen.preventAutoHideAsync();
@@ -17,6 +20,10 @@ const RootLayout = () => {
     'Poppins-Thin': require('../assets/fonts/Poppins-Thin.ttf'),
   });
 
+  NativeWindStyleSheet.setOutput({
+    default: 'native',
+  });
+
   useEffect(() => {
     if (error) throw error;
 
@@ -26,9 +33,16 @@ const RootLayout = () => {
   if (!fontsLoaded && !error) return null;
 
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
-    </Stack>
+    <GluestackUIProvider config={config}>
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+    </GluestackUIProvider>
   );
 };
 
