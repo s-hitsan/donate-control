@@ -2,22 +2,17 @@ import icons from '@/constants/icons';
 
 export const tabs = [
   {
-    label: 'Home',
+    label: 'Лента',
     icon: icons.home,
     path: 'home',
   },
   {
-    label: 'Saved',
-    icon: icons.bookmark,
-    path: 'bookmark',
-  },
-  {
-    label: 'Create',
+    label: 'Збір',
     icon: icons.plus,
     path: 'create',
   },
   {
-    label: 'Profile',
+    label: 'Профіль',
     icon: icons.profile,
     path: 'profile',
   },

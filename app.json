@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "control-hub",
-    "slug": "control-hub",
+    "name": "donate-control",
+    "slug": "donate-control",
     "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo-small.png",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "control.hub.hitsan"
+      "bundleIdentifier": "control.donate.hitsan"
     },
     "android": {
       "versionCode": 4,
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/images/logo-small.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.s_hitsan.controlhub"
+      "package": "com.s_hitsan.controldonate"
     },
     "web": {
       "bundler": "metro",

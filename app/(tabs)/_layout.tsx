@@ -20,7 +20,7 @@ const TabBarIcon = (props: TabBarIconProps) => {
         source={icon}
       />
       <Text
-        className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`}>
+        className={`${focused ? 'font-arimoBold' : 'font-arimoRegular'} text-xs`}>
         {label}
       </Text>
     </View>
