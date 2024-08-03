@@ -38,7 +38,7 @@ const RootLayout = () => {
             name="index"
             options={{
               headerShown: false,
-              statusBarHidden: true,
+              headerTitle: '',
             }}
           />
         </Stack>
