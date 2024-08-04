@@ -46,7 +46,7 @@ export const aidsSlice = createSlice({
       .addCase(addNewAid.pending, handleAidAddPending)
       .addCase(addNewAid.fulfilled, (state, action) => {
         state.isAidAdding = false;
-        state.list.push(action.payload);
+        state.list.unshift(action.payload);
       });
   },
 });
