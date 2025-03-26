@@ -6,6 +6,7 @@ import { NativeWindStyleSheet } from 'nativewind';
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { store } from '@/store';
+import { useAddSegment } from '@/hooks/useAddSegment';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -18,6 +19,8 @@ const RootLayout = () => {
   NativeWindStyleSheet.setOutput({
     default: 'native',
   });
+
+  useAddSegment();
 
   useEffect(() => {
     if (error) throw error;
