@@ -1,1 +1,0 @@
-web: expo start --port $PORT
