@@ -7,6 +7,11 @@
     "icon": "./assets/images/logo-small.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "splash": {
       "image": "./assets/images/logo-small.png",
       "resizeMode": "contain",
