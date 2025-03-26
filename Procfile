@@ -1,1 +1,1 @@
-web: npx expo start --web
+web: expo start --port $PORT
