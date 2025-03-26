@@ -1,1 +1,1 @@
-web: npx expo start --tunnel
+web: serve -s dist -l $PORT
